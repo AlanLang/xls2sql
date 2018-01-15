@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:xls2sql"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown" AllowDrop="True" Drop="Window_Drop">
     <Grid>
-        
+
+        <Button x:Name="ImpFileBtn" Content="打开" HorizontalAlignment="Left" Margin="68,268,0,0" VerticalAlignment="Top" Width="175" Height="43" Click="ImpFileBtn_Click"/>
+        <Button x:Name="closeBtn" Content="退出" HorizontalAlignment="Left" Margin="283,268,0,0" VerticalAlignment="Top" Width="175" Height="43" Click="closeBtn_Click"/>
+        <TextBox x:Name="messagelog" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="22,18,16,96" PreviewDragOver="TextBox_PreviewDragOver"/>
     </Grid>
 </Window>
