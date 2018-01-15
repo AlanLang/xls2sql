@@ -104,7 +104,7 @@ namespace xls2sql
                     List<string> Values = new List<string>();
                     foreach (var item in Names)
                     {
-                        Values.Add($"'{dr[item].ToString()}'");
+                        Values.Add($"'{dr[item].ToString().Trim()}'");
                     }
                     if (Names.Count != Values.Count)
                     {
