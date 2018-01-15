@@ -1,0 +1,14 @@
+﻿<Window x:Class="xls2sql.SqlShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xls2sql"
+        mc:Ignorable="d"
+        Title="SqlShow"  Height="350" Width="525" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Button x:Name="BtnCopy" Content="复制" HorizontalAlignment="Left" Margin="68,268,0,0" VerticalAlignment="Top" Width="175" Height="43" Click="BtnCopy_Click"/>
+        <Button x:Name="BtnClose" Content="退出" HorizontalAlignment="Left" Margin="283,268,0,0" VerticalAlignment="Top" Width="175" Height="43" Click="BtnClose_Click"/>
+        <TextBox x:Name="messagelog" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="22,18,16,96"/>
+    </Grid>
+</Window>
