@@ -29,7 +29,7 @@ namespace xls2sql
             OleDbConnection conn = new OleDbConnection("");
             InitializeComponent();
             Msg("****************");
-            Msg("请选择或拖入安装包");
+            Msg("请选择或拖入Excel文件");
         }
 
 
