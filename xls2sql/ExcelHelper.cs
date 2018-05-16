@@ -22,7 +22,7 @@ namespace xls2sql
         public ExcelHelper(string FilePath)
         {
             _filepath = FilePath;
-            if(Path.GetExtension(_filepath) == ".xls")
+            if(Path.GetExtension(_filepath) == ".xlsx")
                 connString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + _filepath + ";Extended Properties='Excel 12.0;HDR=YES;IMEX=1';";
             else
                 connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + _filepath + ";Extended Properties='Excel 8.0;HDR=YES;IMEX=1';";
